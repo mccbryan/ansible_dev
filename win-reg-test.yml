@@ -1,10 +1,9 @@
----
-- name: 'Write a file!'
+- name: Write File Sample
   hosts: all
- 
- tasks:
- 
- - file:
-    path: c:\\foo.conf
-    state: touch
-    when: "'windows' in group_names"
+  tasks:
+    - name: "Write this file!"
+      debug:
+        file: 
+         path: 'c:\textfile-ansi.txt'
+         state: touch
+output
