@@ -1,7 +1,14 @@
 - name: Work
-  hosts: all
+  hosts: localhost
   tasks:
     - name: Create a file
       file:
         path: "/test-ansiblefile.txt"
         state: touch
+        when: ansible_facts["ansible_os_family"] == "Linux"
+
+    - name: Create a file
+      win_file:
+        path: "/test-ansiblefile.txt"
+        state: touch
+        when: ansible_facts["ansible_os_family"] == "Windows"
