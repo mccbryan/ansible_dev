@@ -1,5 +1,4 @@
-- name:Big Things
-  hosts: all
+- hosts: all
   tasks:
     - name: Create a file on linux
       file:
