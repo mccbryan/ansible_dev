@@ -11,4 +11,4 @@
       win_file:
         path: "/test-ansiblefile.txt"
         state: touch
-        when: ansible_facts['os_family'] == "Windows"
+        when: ansible_facts['ansible_os_family'] == "Windows"
