@@ -2,7 +2,6 @@
   hosts: all
   tasks:
     - name: "Write this file!"
-      debug:
         file: 
-         path: 'c:\textfile-ansi.txt'
-         state: touch
+           path: 'c:\textfile-ansi.txt'
+           state: touch
