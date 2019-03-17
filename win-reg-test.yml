@@ -1,4 +1,9 @@
 ---
+- name: 'Write a file!'
+  hosts: all
+ 
+ tasks:
+ 
  - file:
     path: c:\\foo.conf
     state: touch
