@@ -6,4 +6,3 @@
         file: 
          path: 'c:\textfile-ansi.txt'
          state: touch
-output
