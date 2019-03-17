@@ -1,4 +1,9 @@
-- name: "Write this file!"
-  file: 
+
+---
+
+- hosts: all
+tasks:
+  - name: Write this file!
+    file:
        path: 'c:\textfile-ansi.txt'
        state: touch
