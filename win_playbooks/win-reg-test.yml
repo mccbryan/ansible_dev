@@ -1,0 +1,5 @@
+---
+ - file:
+    path: c:\\foo.conf
+    state: touch
+    when: "'windows' in group_names"
