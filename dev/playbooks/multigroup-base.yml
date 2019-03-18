@@ -1,5 +1,5 @@
 ---
 - hosts: all
   roles:
-    - vmware
-    - windows
+    - ../roles/vmware
+    - ../roles/windows
