@@ -1,8 +1,7 @@
 ---
-- tasks:
-  - win_ping: 
-    name: test windows connection
-  - win_file:
-    name: write windows file
-    path: 'c:\Windows\Temp\ansible-windows.txt'
-    state: touch
+- win_ping: 
+  name: test windows connection
+- win_file:
+  name: write windows file
+  path: 'c:\Windows\Temp\ansible-windows.txt'
+  state: touch
