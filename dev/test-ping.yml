@@ -6,12 +6,13 @@
     - name: write linux file
       file:
         path: /tmp/ansible-linux
-        touch:
+        action: touch
+      
 - hosts: windows
   tasks:
     - name: test windows connection
       win_ping:
-    -name: write windows file
+    - name: write windows file
       win_file:
         path: 'c:\Windows\Temp\ansible-windows.txt'
-        touch:
+        action: touch
