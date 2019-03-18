@@ -1,5 +1,5 @@
 ---
-- tasks:
+tasks:
   - name: test windows connection
     win_ping: 
   - name: write windows file
