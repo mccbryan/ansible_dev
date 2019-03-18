@@ -4,3 +4,7 @@
   tasks:
     - name: test connection
       ping:
+- hosts: windows
+  tasks:
+    - name: test windows connection
+      win_ping:
