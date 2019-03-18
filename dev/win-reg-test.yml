@@ -6,8 +6,6 @@
         state: touch
     when: ansible_facts['os_family'] == "Centos"
       
-- hosts: windows
-  tasks:
     - name: Create a file on windows 
       win_file:
         path: "/test-ansiblefile.txt"
