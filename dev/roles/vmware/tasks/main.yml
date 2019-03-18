@@ -4,5 +4,5 @@
   import_tasks: vmware-windows.yml
   when: ansible_facts['os_family'] == "Windows"
 - import_tasks: vmware-rhel.yml
-  when: ansible_facts['os_family'] == "RedHat'
+  when: ansible_facts['os_family'] == "RedHat"
 
