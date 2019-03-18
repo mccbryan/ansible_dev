@@ -1,0 +1,7 @@
+---
+- ping:
+  name: test connection
+- file:
+  name: write linux file
+  path: /tmp/ansible-linux
+  state: touch

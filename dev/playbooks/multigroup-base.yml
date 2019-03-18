@@ -1,18 +1,5 @@
 ---
-- hosts: linux
+- hosts: all
   tasks:
-    - name: test connection
-      ping:
-    - name: write linux file
-      file:
-        path: /tmp/ansible-linux
-        state: touch
-- hosts: windows
-  tasks:
-      when: ansible_facts['anisble_os_family'] == 'windows'
-    - name: test windows connection
-      win_ping:
-    - name: write windows file
-      win_file:
-        path: 'c:\Windows\Temp\ansible-windows.txt'
-        state: touch
+  - include_role:
+    name: vmware

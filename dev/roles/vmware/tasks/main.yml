@@ -1,0 +1,10 @@
+---
+# tasks file for windows
+
+import_tasks: vmware-windows.yml
+when: ansible_facts['anisble_os_family']|lower == 'windows'
+import_tasks: vmware-linux.yml
+when: ansible_facts['anisble_os_family']|lower == 'redhat'
+
+
+
