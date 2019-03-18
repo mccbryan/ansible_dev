@@ -6,7 +6,7 @@
     - name: write linux file
       file:
         path: /tmp/ansible-linux
-        action: touch
+        state: touch
       
 - hosts: windows
   tasks:
@@ -15,4 +15,4 @@
     - name: write windows file
       win_file:
         path: 'c:\Windows\Temp\ansible-windows.txt'
-        action: touch
+        state: touch
