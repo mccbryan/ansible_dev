@@ -1,12 +1,14 @@
 ---
 - hosts: all
-  remote_user: root
-  tasks:
+    tasks:
     - name: Create a file on linux
       file:
         path: "/test-ansiblefile.txt"
         state: touch
--hosts: all  
+        remote_user: sa.ansible
+        become: yes
+        become_method: su
+-hosts: windows 
   tasks:
     - name: Create a file on windows 
       win_file:
