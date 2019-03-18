@@ -1,4 +1,4 @@
-centos-04.lab.loc | SUCCESS => {
+{
     "ansible_facts": {
         "ansible_all_ipv4_addresses": [
             "10.3.99.31"
