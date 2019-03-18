@@ -1,5 +1,4 @@
 ---
 - hosts: all
-  tasks:
-  - include_role:
-    name: vmware
+  roles:
+    - vmware
