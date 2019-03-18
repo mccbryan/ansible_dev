@@ -4,8 +4,6 @@
       file:
         path: "/test-ansiblefile.txt"
         state: touch
-    when: ansible_facts['os_family'] == "Centos"
-      
     - name: Create a file on windows 
       win_file:
         path: "/test-ansiblefile.txt"
