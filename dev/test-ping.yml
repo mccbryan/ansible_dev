@@ -4,9 +4,7 @@
   tasks:
     - name: test connection
       ping:
-      when: ansible_facts['os_family'] == "redhat"
 - hosts: windows
   tasks:
     - name: test windows connection
       win_ping:
-      when: ansible_facts['os_family'] == "windows"
