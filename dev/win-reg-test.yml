@@ -1,9 +1,12 @@
 - hosts: all
+  remote_user: root
   tasks:
     - name: Create a file on linux
       file:
         path: "/test-ansiblefile.txt"
         state: touch
+-hosts: all  
+  tasks:
     - name: Create a file on windows 
       win_file:
         path: "/test-ansiblefile.txt"
