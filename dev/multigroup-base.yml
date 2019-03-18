@@ -16,3 +16,4 @@
       win_file:
         path: 'c:\Windows\Temp\ansible-windows.txt'
         state: touch
+        when: ansible_facts['anisble_os_family'] == 'windows'
