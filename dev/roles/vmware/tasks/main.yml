@@ -2,7 +2,7 @@
 # tasks file for windows
 - name: Setup main roles for VMware machines
   import_tasks: vmware-windows.yml
-  when: ansible_facts['anisble_os_family']|lower == 'windows'
+  when: ansible_facts['anisble_os_family'] == "Windows"
 - import_tasks: vmware-rhel.yml
-  when: ansible_facts['anisble_os_family']|lower == 'redhat'
+  when: ansible_facts['anisble_os_family'] == "RedHat'
 
