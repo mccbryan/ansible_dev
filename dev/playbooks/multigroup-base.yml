@@ -3,4 +3,4 @@
   roles:
     - roles/vmware
     - roles/windows
-    - rolles/linux
+    - roles/linux
