@@ -3,5 +3,5 @@
   win_ping: 
 - name: write windows file
   win_file:
-    path: 'c:\Windows\Temp\vmware-ansible-windows.txt'
+    path: 'c:\Windows\Temp\windows-ansible-windows.txt'
     state: touch

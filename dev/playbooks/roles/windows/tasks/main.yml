@@ -1,2 +1,6 @@
 ---
 # tasks file for windows
+- name: Setup main roles for VMware machines
+  import_tasks: vmware-windows.yml
+  when: ansible_facts['os_name'] == "*Windows Server 2016*"
+
