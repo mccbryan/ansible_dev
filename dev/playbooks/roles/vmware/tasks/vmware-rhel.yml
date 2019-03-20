@@ -3,5 +3,5 @@
   ping:
 - name: write linux file
   file:  
-    path: /tmp/ansible-linux
+    path: /tmp/vmware-ansible-linux
     state: touch

@@ -1,6 +1,6 @@
 ---
 # tasks file for windows
 - name: Setup main roles for VMware machines
-- import_tasks: vmware-rhel.yml
+- import_tasks: linux-rhel.yml
   when: ansible_facts['os_family'] == "RedHat"
 
