@@ -1,5 +1,5 @@
 ---
 # tasks file for windows
 - import_tasks: windows-2016.yml
-  when: ansible_facts['ansible_distribution'] == "*Windows Server 2016*"
+  when: ansible_facts['distribution'] == "*Windows Server 2016*"
 
