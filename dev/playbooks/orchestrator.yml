@@ -1,0 +1,7 @@
+---
+- name: Update registry to use latest dotNet CLR
+  win_regedit:
+    path: HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework
+    name: OnlyUseLatestCLR
+    data: 1
+    type: dword

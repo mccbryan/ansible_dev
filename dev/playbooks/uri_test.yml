@@ -1,0 +1,8 @@
+---
+- name: Test some things
+  uri:
+    url: https://isilon01-bm:8080/platform/?describe&list
+    method: GET
+    user: root
+    password: login.mark4!
+    status_code: 200
